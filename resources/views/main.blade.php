@@ -124,41 +124,25 @@
 
     <footer class="footer-demo section-dark">
         <div class="container">
-            <nav class="pull-left">
-                <ul>
-                    @if( Request::path() == 'shows' )
-                        <li>
-                            <a>
-                                Teléfonos: 36131284 / 45981159
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                Correo electrónico: showskmy@hotmail.com
-                            </a>
-                        </li>
-                    @endif
-    
-                    {{--<li>
-                        <a href="http://www.creative-tim.com">
-                            Creative Tim
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://blog.creative-tim.com">
-                           Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.creative-tim.com/product/rubik">
-                            Licenses 
-                        </a>
-                    </li>--}}
-
-                </ul>
-            </nav>
-            <div class="copyright pull-right">
-                &copy; 2019, hecho con <i class="fa fa-heart heart"></i> & <i class="fa fa-coffee" style="color: white;"></i> 
+            <div class="row">
+                @if( Request::path() == 'shows' )
+                    <div class="col-md-8">
+                        <p>Teléfonos: 36131284 / 44981159</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            WhatsApp: 5536131284 / 5545981159
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            Correo electrónico:  showsinfantiles@kmy.com.mx
+                        </p>
+                    </div>
+                @endif
+                <div class="col-md-4">
+                    &copy; 2019, hecho con <i class="fa fa-heart heart"></i> & <i class="fa fa-coffee" style="color: white;"></i> 
+                </div>
             </div>
         </div>
     </footer>
