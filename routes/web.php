@@ -37,3 +37,5 @@ Route::get('/shows/personal/{id}', 'PersonalController@show');
 Route::get('/shows/promociones', function () {
     return view('shows.promociones');
 });
+
+Route::get('/nosotros', 'Controller@nosotros');

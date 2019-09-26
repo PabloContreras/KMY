@@ -18,7 +18,7 @@
 
         
     <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <style type="text/css">
@@ -62,6 +62,10 @@
                 columns: 1;
             }
         }
+        #active{
+            background-color: #00bdf2; 
+            color: white;
+        }
     </style>
 
       
@@ -85,19 +89,27 @@
         <div class="collapse navbar-collapse" id="navigation-example-2">
           <ul class="nav navbar-nav navbar-right">
             <li>
-                <a href="{{ url('/shows') }}" class="btn btn-simple">Shows</a>
+                <a href="{{ url('/shows') }}" class="btn btn-simple" 
+                    {{ Request::path() == 'shows' ? 'id=active' : '' }} 
+                    {{ Request::path() == 'shows/videos' ? 'id=active' : '' }} 
+                    {{ Request::path() == 'shows/galeria' ? 'id=active' : '' }}
+                    {{ Request::path() == 'shows/todos' ? 'id=active' : '' }}
+                    {{ Request::path() == 'shows/personal' ? 'id=active' : '' }}
+                    {{ Request::path() == 'shows/promociones' ? 'id=active' : '' }}>
+                    Shows
+                </a>
             </li>
             <li>
-                <a href="#" class="btn btn-simple">Salón</a>
+                <a href="#" class="btn btn-simple" {{ Request::path() == 'salon' ? 'id=active' : '' }}>Salón</a>
             </li>
             <li>
-                <a href="#" class="btn btn-simple">Quiénes somos</a>
+                <a href="{{ url('/nosotros') }}" class="btn btn-simple" {{ Request::path() == 'nosotros' ? 'id=active' : '' }}>Quiénes somos</a>
             </li>
+            {{--<li>
+                <a href="#" class="btn btn-simple" {{ Request::path() == 'otros-servicios' ? 'id=active' : '' }}>Otros servicios</a>
+            </li>--}}
             <li>
-                <a href="#" class="btn btn-simple">Otros servicios</a>
-            </li>
-            <li>
-                <a href="#" class="btn btn-simple">Blog</a>
+                <a href="#" class="btn btn-simple" {{ Request::path() == 'blog' ? 'id=active' : '' }}>Blog</a>
             </li>
             <li>
                 <a href="#" target="_blank" class="btn btn-simple"><i class="fa fa-twitter"></i></a>
@@ -127,16 +139,16 @@
             <div class="row">
                 @if( Request::path() == 'shows' )
                     <div class="col-md-8">
-                        <p>Teléfonos: 36131284 / 44981159</p>
+                        <p><i class="fas fa-phone" style="color: #00bdf2"></i> | 36131284 / 44981159</p>
                     </div>
                     <div class="col-md-8">
                         <p>
-                            WhatsApp: 5536131284 / 5545981159
+                            <i class="fab fa-whatsapp" style="color: #00bdf2"></i> | 5536131284 / 5545981159
                         </p>
                     </div>
                     <div class="col-md-8">
                         <p>
-                            Correo electrónico:  showsinfantiles@kmy.com.mx
+                            <i class="fas fa-at" style="color: #00bdf2"></i> | showsinfantiles@kmy.com.mx
                         </p>
                     </div>
                 @endif
