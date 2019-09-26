@@ -134,7 +134,7 @@
     <footer class="footer-demo section-dark">
         <div class="container">
             <div class="row">
-                @if( Request::path() == 'shows' )
+                @if( Request::path() == 'shows' || Request::path() == 'shows/videos' || Request::path() == 'shows/galeria' || Request::path() == 'shows/todos' || Request::path() == 'shows/personal' || Request::path() == 'shows/promociones')
                     <div class="col-md-8">
                         <p><i class="fas fa-phone" style="color: #00bdf2"></i> | 36131284 / 44981159</p>
                     </div>
