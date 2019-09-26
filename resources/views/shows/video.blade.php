@@ -20,7 +20,7 @@
     <div class="col-md-10 col-md-offset-1">
         <div class="row text-center">
             <div class="col-md-12" style="margin-bottom: 10px;">
-                <a href="#" class="btn btn-success">Shows</a>
+                <a href="#" class="btn btn-success">Shows en vivo</a>
                 <a href="#" class="btn btn-success">Empresas</a>
                 <a href="#" class="btn btn-success">Escuelas</a>
                 <a href="#" class="btn btn-success">Artistas</a>
@@ -28,7 +28,6 @@
             <div>
                 <div class="col-md-3">
                     <div class="card">
-                        {{--<video src="https://www.youtube.com/watch?v=j81rJM4VTiY" style="width: 100%; display: block;"></video>--}}
                         <iframe src="https://www.youtube.com/embed/j81rJM4VTiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;"></iframe>
                         <div class="card-body">
                             <p class="card-text">Coco</p>
