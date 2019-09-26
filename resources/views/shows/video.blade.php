@@ -1,4 +1,5 @@
 @extends('main')
+
 @section('navtab')
     <div class="alert landing-alert" style="background-color: #00bdf2;">
         <div class="nav-tabs-navigation">
@@ -16,53 +17,51 @@
     </div>
 @endsection
 @section('content')
-    {{--<center>
-        <section>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JmQ-Rds71k0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-    </center>--}}
-    <br><br><br>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-      <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <center>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JmQ-Rds71k0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-                </center> 
+    <div class="col-md-10 col-md-offset-1">
+        <div class="row text-center">
+            <div class="col-md-12" style="margin-bottom: 10px;">
+                <a href="#" class="btn btn-success">Shows</a>
+                <a href="#" class="btn btn-success">Empresas</a>
+                <a href="#" class="btn btn-success">Escuelas</a>
+                <a href="#" class="btn btn-success">Artistas</a>
             </div>
-
-            <div class="item">
-                <center>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0R2pm8gQ8Ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </center>
-            </div>
-
-            <div class="item">
-                <center>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zZbcqENqRFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </center>
+            <div>
+                <div class="col-md-3">
+                    <div class="card">
+                        {{--<video src="https://www.youtube.com/watch?v=j81rJM4VTiY" style="width: 100%; display: block;"></video>--}}
+                        <iframe src="https://www.youtube.com/embed/j81rJM4VTiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;"></iframe>
+                        <div class="card-body">
+                            <p class="card-text">Coco</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <iframe src="https://www.youtube.com/embed/t_N6vUu8Dfs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;"></iframe>
+                        <div class="card-body">
+                            <p class="card-text">Mickey Mouse</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <iframe src="https://www.youtube.com/embed/lI_wxrK2KB0U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%;"></iframe>
+                    
+                        <div class="card-body">
+                            <p class="card-text">Descendientes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <iframe src="https://www.youtube.com/embed/eEmtEdvMcss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%"></iframe>
+                        <div class="card-body">
+                            <p class="card-text">Masha y el oso</p>
+                        </div>
+                    </div>
+                </div>                
             </div>
         </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="fas fa-arrow-left"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="fas fa-arrow-right"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
-<br><br><br>
-
-
 
 @endsection

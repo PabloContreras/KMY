@@ -112,26 +112,23 @@
                 <a href="#" class="btn btn-simple" {{ Request::path() == 'blog' ? 'id=active' : '' }}>Blog</a>
             </li>
             <li>
-                <a href="#" target="_blank" class="btn btn-simple"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-                <a href="#" target="_blank" class="btn btn-simple"><i class="fa fa-facebook"></i></a>
+                <a href="#" target="_blank" class="btn btn-simple"><i class="fab fa-facebook-square" style="color: #3b5998 "></i></a>
             </li>
            </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-->
     </nav>      
-        @yield('navtab')
+    @if(Request::path() == 'shows' || Request::path() == 'shows/videos' || Request::path() == 'shows/galeria' || Request::path() == 'shows/todos' || Request::path() == 'shows/personal' || Request::path() == 'shows/promociones' )
+        @include('partials.nav-shows')
+    @endif
     <div class="wrapper">
         <div class="landing-header" style="background-image: url('/paper_img/Kmy.png'); background-size: cover; background-position: center;">
-            <div class="container">
-            </div>    
+        </div> 
+        <div class="container">
+            @yield('content')         
+
         </div>
-        <div class="main">   
-
-            @yield('content')
-
-        </div>     
+        <div class="section" style="background-color: white;"></div>    
     </div>
 
     <footer class="footer-demo section-dark">
