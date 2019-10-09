@@ -111,9 +111,6 @@
             <li>
                 <a href="#" class="btn btn-simple" {{ Request::path() == 'blog' ? 'id=active' : '' }}>Blog</a>
             </li>
-            <li>
-                <a href="#" target="_blank" class="btn btn-simple"><i class="fab fa-facebook-square" style="color: #3b5998 "></i></a>
-            </li>
            </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-->
@@ -136,7 +133,7 @@
             <div class="row">
                 @if( Request::path() == 'shows' || Request::path() == 'shows/videos' || Request::path() == 'shows/galeria' || Request::path() == 'shows/todos' || Request::path() == 'shows/personal' || Request::path() == 'shows/promociones')
                     <div class="col-md-8">
-                        <p><i class="fas fa-phone" style="color: #00bdf2"></i> | 36131284 / 44981159</p>
+                        <p><i class="fas fa-phone" style="color: #00bdf2"></i> | 36131284 / 45981159</p>
                     </div>
                     <div class="col-md-8">
                         <p>

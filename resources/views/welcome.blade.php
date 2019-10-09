@@ -84,6 +84,9 @@
                                         <button class="btn btn-dark btn-block btn-lg btn-fill">Enviar</button>
                                     </div>
                                 </div>
+                                <div class="text-center">
+                                     <a href="#" target="_blank" class="btn btn-simple"><i class="fab fa-facebook-square fa-2x" style="color: #3b5998 "></i></a>
+                                </div>
                             </form>
                         </div>
                     </div>
