@@ -34,8 +34,9 @@
           max-width: 100%;
           height: auto;
         }
-        #galeria {
+        .galeria {
             margin: 1rem auto;
+            padding-bottom: 10px;
             width:100%;
             max-width:960px;
             column-count: 4;
@@ -100,7 +101,15 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="btn btn-simple" {{ Request::path() == 'salon' ? 'id=active' : '' }}>Salón</a>
+                <a href="{{ url('/salon')}}" class="btn btn-simple" 
+                {{ Request::path() == 'salon' ? 'id=active' : '' }}
+                {{ Request::path() == 'salon/videos' ? 'id=active' : '' }}
+                {{ Request::path() == 'salon/galeria' ? 'id=active' : '' }}
+                {{ Request::path() == 'salon/paquetes' ? 'id=active' : '' }}
+                {{ Request::path() == 'salon/promociones' ? 'id=active' : '' }}
+                {{ Request::path() == 'salon/ven_a_jugar' ? 'id=active' : '' }}
+                >
+                Salón</a>
             </li>
             <li>
                 <a href="{{ url('/nosotros') }}" class="btn btn-simple" {{ Request::path() == 'nosotros' ? 'id=active' : '' }}>Quiénes somos</a>
@@ -117,6 +126,8 @@
     </nav>      
     @if(Request::path() == 'shows' || Request::path() == 'shows/videos' || Request::path() == 'shows/galeria' || Request::path() == 'shows/todos' || Request::path() == 'shows/personal' || Request::path() == 'shows/promociones' )
         @include('partials.nav-shows')
+    @elseif(Request::path() == 'salon' || Request::path() == 'salon/videos' || Request::path() == 'salon/galeria' || Request::path() == 'salon/paquetes' || Request::path() == 'salon/promociones' || Request::path() == 'salon/ven_a_jugar')
+        @include('partials.nav-salon')
     @endif
     <div class="wrapper">
         <div class="landing-header" style="background-image: url('/paper_img/Kmy.png'); background-size: cover; background-position: center;">
@@ -145,6 +156,20 @@
                             <i class="fas fa-at" style="color: #00bdf2"></i> | showsinfantiles@kmy.com.mx
                         </p>
                     </div>
+                @elseif(Request::path() == 'salon' || Request::path() == 'salon/videos' || Request::path() == 'salon/galeria' || Request::path() == 'salon/paquetes' || Request::path() == 'salon/promociones' || Request::path() == 'salon/ven_a_jugar')
+                    <div class="col-md-8">
+                        <p><i class="fas fa-phone" style="color: #00bdf2"></i> | 72581805 / 72581833</p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            <i class="fab fa-whatsapp" style="color: #00bdf2"></i> | 5545981159
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            <i class="fas fa-at" style="color: #00bdf2"></i> | sucursalaragon@kmy.com.mx
+                        </p>
+                    </div>
                 @endif
                 <div class="col-md-4">
                     &copy; 2019, hecho con <i class="fa fa-heart heart"></i> & <i class="fa fa-coffee" style="color: white;"></i> 
@@ -156,8 +181,11 @@
 
 </body>
 
-<script src="{{ asset('js/jquery-1.10.2.js') }}" type="text/javascript"></script>
-<script src="{{ asset('js/jquery-ui-1.10.4.custom.min.js') }}" type="text/javascript"></script>
+{{--<script src="{{ asset('js/jquery-1.10.2.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/jquery-ui-1.10.4.custom.min.js') }}" type="text/javascript"></script>--}}
+
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
 
 <script src="{{ asset('bootstrap3/js/bootstrap.js') }}" type="text/javascript"></script>
 

@@ -84,10 +84,19 @@
                                         <button class="btn btn-dark btn-block btn-lg btn-fill">Enviar</button>
                                     </div>
                                 </div>
-                                <div class="text-center">
-                                     <a href="#" target="_blank" class="btn btn-simple"><i class="fab fa-facebook-square fa-2x" style="color: #3b5998 "></i></a>
-                                </div>
                             </form>
+                            <br><br>
+                            <div class="text-center">
+                                 <a href="https://www.facebook.com/showsinfantileskmy/" target="_blank" class="btn btn-simple">
+                                    <i class="fab fa-facebook-square fa-2x" style="color: #3b5998;"></i>
+                                 </a>
+                                 <a href="https://www.youtube.com/channel/UCIbsCicBj-8OWxtDI09oWLg/videos" target="_blank" class="btn btn-simple">
+                                     <i class="fab fa-youtube fa-2x" style="color: #c4302b;"></i>
+                                 </a>
+                                 <a href="https://www.instagram.com/showskmy/" target="_blank" class="btn btn-simple">
+                                     <i class="fab fa-instagram fa-2x"></i>
+                                 </a>
+                            </div>
                         </div>
                     </div>
                     

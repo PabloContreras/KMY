@@ -5,7 +5,7 @@
             <div class="nav-tabs-wrapper">
             <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
                 <li style="font-size: 12px;"><a href="#contacto" style="color: white;">Contacto</a></li>
-                <li style="font-size: 12px;"><a href="{{ url('/shows/videos') }}" style="color: white;">Vídeo</a></li>
+                <li style="font-size: 12px;"><a href="{{ url('/shows/videos') }}" style="color: white;">Vídeos</a></li>
                 <li style="font-size: 12px;"><a href="{{ url('/shows/galeria')}}" style="color: white;">Galería</a></li>
                 <li style="font-size: 12px;"><a href="{{ url('/shows/todos')}}" style="color: white;">Shows</a></li>
                 <li style="font-size: 12px;"><a href="{{ url('/shows/personal')}}" style="color: white;">Personal</a></li>
@@ -40,6 +40,18 @@
                             </div>
                         </div>
                     </form>
+                    <br><br>
+                    <div class="text-center">
+                         <a href="https://www.facebook.com/showsinfantileskmy/" target="_blank" class="btn btn-simple">
+                            <i class="fab fa-facebook-square fa-2x" style="color: #3b5998;"></i>
+                         </a>
+                         <a href="https://www.youtube.com/channel/UCIbsCicBj-8OWxtDI09oWLg/videos" target="_blank" class="btn btn-simple">
+                             <i class="fab fa-youtube fa-2x" style="color: #c4302b;"></i>
+                         </a>
+                         <a href="https://www.instagram.com/showskmy/" target="_blank" class="btn btn-simple">
+                             <i class="fab fa-instagram fa-2x"></i>
+                         </a>
+                    </div>
                 </div>
             </div>
         </div>

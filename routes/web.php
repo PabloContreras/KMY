@@ -14,7 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+/*
+**		Shows
+*/
 Route::get('/shows', function () {
     return view('shows.index');
 });
@@ -37,5 +39,21 @@ Route::get('/shows/personal/{id}', 'PersonalController@show');
 Route::get('/shows/promociones', function () {
     return view('shows.promociones');
 });
+/*
+**		Salón
+*/
+Route::get('/salon', function () {
+    return view('salon.index');
+});
+Route::get('/salon/videos', function() {
+	return view('salon.videos');
+});
+Route::get('/salon/galeria', function() {
+	return view('salon.galeria');
+});
 
+/*
+**		Nosotros
+*/
 Route::get('/nosotros', 'Controller@nosotros');
+
