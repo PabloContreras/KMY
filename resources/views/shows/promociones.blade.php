@@ -16,5 +16,7 @@
     </div>
 @endsection
 @section('content')
-
+    <div>
+        <img src="{{ asset('/img/shows/promociones/octubre.jpg') }}" style="width: 100%;">
+    </div>
 @endsection
