@@ -16,7 +16,12 @@
     </div>
 @endsection
 @section('content')
-    <div>
-        <img src="{{ asset('/img/shows/promociones/octubre.jpg') }}" style="width: 100%;">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2>Cualquier show</h2>
+        </div>
+        <div class="col-md-12 text-center">
+            <img src="{{ asset('/img/shows/promociones/octubre.jpg') }}" style="width: 100%;">
+        </div>        
     </div>
 @endsection

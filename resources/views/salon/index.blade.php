@@ -45,12 +45,12 @@
                          <a href="https://www.facebook.com/KMYsalonAragon/" target="_blank" class="btn btn-simple">
                             <i class="fab fa-facebook-square fa-2x" style="color: #3b5998;"></i>
                          </a>
-                         <a href="https://www.youtube.com/channel/UCIbsCicBj-8OWxtDI09oWLg/videos" target="_blank" class="btn btn-simple">
+                         {{--<a href="https://www.youtube.com/channel/UCIbsCicBj-8OWxtDI09oWLg/videos" target="_blank" class="btn btn-simple">
                              <i class="fab fa-youtube fa-2x" style="color: #c4302b;"></i>
                          </a>
                          <a href="https://www.instagram.com/showskmy/" target="_blank" class="btn btn-simple">
                              <i class="fab fa-instagram fa-2x"></i>
-                         </a>
+                         </a>--}}
                     </div>
                 </div>
             </div>

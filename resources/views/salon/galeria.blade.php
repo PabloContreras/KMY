@@ -5,7 +5,7 @@
         <h2>Galería</h2>
         <div class="col-md-12" style="margin-bottom: 10px;">
             <button class="btn btn-success" id="instalaciones">Instalaciones</button>
-            <button class="btn btn-success" id="shows_en_vivo">Shows en vivo</button>
+            <button class="btn btn-success" id="shows_en_vivo">Eventos en vivo</button>
         </div>
     </center>
     <section class="galeria">
@@ -27,7 +27,7 @@
                 <article>
                     <center>
                         <figure>
-                            <img src="{{ asset('/img/shows/shows_en_vivo/'.$i.'.jpg') }}" style="width: 200px;" /> 
+                            <img src="{{ asset('/img/salon/eventos_en_vivo/'.$i.'.jpg') }}" style="width: 200px;" /> 
                         </figure>
                     </center>
                 </article>

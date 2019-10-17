@@ -18,13 +18,17 @@
 @endsection
 @section('content')
     <div class="row text-center">
+        <div class="col-md-12 text-center" >
+          <h4>Busca tu show por orden alfabético</h4>
+        </div>
+        <br>
         <div class="col-md-4">
             <ol>
               <li>
                 <a>Angry Birds</a>
               </li>
               <li>
-                  <a href="">Animación</a>
+                  <a href="https://www.youtube.com/watch?v=PELO2gAm_-A" target="__blank" rel="tooltip" title="Ver Vídeo">Animación <i class="fas fa-link"></i></a>
               </li>  
               <li>
                   <a>Atrévete a soñar</a>
@@ -33,7 +37,7 @@
                   <a>Aurora</a>
               </li>
               <li>
-                  <a>Avengers</a>
+                  <a href="https://www.youtube.com/watch?v=zZbcqENqRFE" target="__blank" rel="tooltip" title="Ver Vídeo">Avengers <i class="fas fa-link"></i></a>
               </li>
               <li>
                   <a>Baby Shower</a>
@@ -51,7 +55,7 @@
                   <a>Bella y bestia</a>
               </li>
               <li>
-                  <a>Bely y Beto</a>
+                  <a href="https://www.youtube.com/watch?v=U8BlephthZk" target="__blank" rel="tooltip" title="Ver Vídeo">Bely y Beto <i class="fas fa-link"></i></a>
               </li>
               <li>
                   <a>Ben 10</a>
@@ -66,13 +70,13 @@
                   <a>Cenicienta</a>
               </li>
               <li>
-                  <a>Coco</a>
+                  <a href="https://www.youtube.com/watch?v=FSVyFHtwv9Y" target="__blank" rel="tooltip" title="Ver Vídeo">Coco <i class="fas fa-link"></i></a>
               </li>
               <li>
                   <a>Corazón y cupido</a>
               </li>
               <li>
-                  <a>Descendientes</a>
+                  <a href="https://www.youtube.com/watch?v=lI_wxrK2KBU" target="__blank" rel="tooltip" title="Ver Vídeo">Descendientes <i class="fas fa-link"></i></a>
               </li>
               <li>
                   <a>Doctora juguetes</a>
@@ -84,10 +88,10 @@
                   <a>El Chavo del ocho</a>
               </li>
               <li>
-                  <a>Frozen</a>
+                  <a href="https://www.youtube.com/watch?v=0R2pm8gQ8Ng" target="__blank" rel="tooltip" title="Ver Vídeo">Frozen <i class="fas fa-link"></i></a>
               </li>
               <li>
-                  <a>Gallina pintadita</a>
+                  <a href="https://www.youtube.com/watch?v=wboove-nO3A" target="__blank" rel="tooltip" title="Ver Vídeo">Gallina pintadita <i class="fas fa-link"></i></a>
               </li>
               <li>
                   <a>Hadas</a>
@@ -118,16 +122,16 @@
                     <a>Jake y los piratas</a>
                 </li>
                 <li>
-                    <a>Jazmín</a>
+                    <a href="https://www.youtube.com/watch?v=FvEb0aVo0x4" target="__blank" rel="tooltip" title="Ver Vídeo">Jasmine <i class="fas fa-link"></i></a>
                 </li>
                 <li>
                     <a>La CQ</a>
                 </li>
                 <li>
-                    <a>La sirenita</a>
+                    <a href="https://www.youtube.com/watch?v=FSVyFHtwv9Y" target="__blank" rel="tooltip" title="Ver Vídeo">La sirenita <i class="fas fa-link"></i></a>
                 </li>
                 <li>
-                    <a>Lady bug</a>
+                    <a href="https://www.youtube.com/watch?v=r1Vg3HNps0o" target="__blank" rel="tooltip" title="Ver Vídeo">Lady bug <i class="fas fa-link"></i></a>
                 </li>
                 <li>
                     <a>Lazy town</a>
@@ -142,13 +146,13 @@
                     <a>Mario Bros</a>
                 </li>
                 <li>
-                    <a>Masha y el Oso</a>
+                    <a href="https://www.youtube.com/watch?v=eEmtEdvMcss" target="__blank" rel="tooltip" title="Ver Vídeo">Masha y el Oso <i class="fas fa-link"></i></a>
                 </li>
                 <li>
-                    <a>Micky Mouse</a>
+                    <a href="https://www.youtube.com/watch?v=j81rJM4VTiY" target="__blank" rel="tooltip" title="Ver Vídeo">Mickey Mouse <i class="fas fa-link"></i></a>
                 </li>
                 <li>
-                    <a>Minions</a>
+                    <a href="https://www.youtube.com/watch?v=Z57DI2j-X9I" target="__blank" rel="tooltip" title="Ver Vídeo">Minions <i class="fas fa-link"></i></a>
                 </li>
                 <li>
                     <a>Mis XV</a>
@@ -166,13 +170,13 @@
                     <a>Mounstros</a>
                 </li>
                 <li>
-                    <a>My Little Pony</a>
+                    <a href="https://www.youtube.com/watch?v=MdJPAnEXGuc" target="__blank" rel="tooltip" title="Ver Vídeo">My Little Pony <i class="fas fa-link"></i></a>
                 </li>
                 <li>
-                    <a>Paw Patrol</a>
+                    <a href="https://www.youtube.com/watch?v=yy6TeOUhUUE" target="__blank" rel="tooltip" title="Ver Vídeo">Paw Patrol <i class="fas fa-link"></i></a>
                 </li>
                 <li>
-                    <a>Peppa Pig</a>
+                    <a href="https://www.youtube.com/watch?v=ftWs2wjwO1Y" target="__blank" rel="tooltip" title="Ver Vídeo">Peppa Pig <i class="fas fa-link"></i></a>
                 </li>
                 <li>
                     <a>Peter Pan</a>
@@ -186,7 +190,7 @@
         <div class="col-md-4">
             <ol start="53">
                 <li>
-                    <a>Pinta caritas</a>
+                    <a href="https://www.youtube.com/watch?v=kSYGceACSuA" target="__blank" rel="tooltip" title="Ver Vídeo">Pinta caritas <i class="fas fa-link"></i></a>
                 </li>
                 <li>
                     <a>Pistas de Blue</a>
@@ -201,13 +205,13 @@
                     <a>Pokémon</a>
                 </li>
                 <li>
-                    <a>Power Rangers</a>
+                    <a href="https://www.youtube.com/watch?v=v8A5tKeP-iQ" target="__blank" rel="tooltip" title="Ver Vídeo">Power Rangers <i class="fas fa-link"></i></a>
                 </li>
                 <li>
                     <a>Presencias</a>
                 </li>
                 <li>
-                    <a>Princesas</a>
+                    <a href="https://www.youtube.com/watch?v=4k1rS27NCzA" target="__blank" rel="tooltip" title="Ver Vídeo">Princesas <i class="fas fa-link"></i></a>
                 </li>
                 <li>
                     <a>Pucca y Garu</a>
@@ -231,13 +235,13 @@
                     <a>Shrek</a>
                 </li>
                 <li>
-                    <a>Soy Luna</a>
+                    <a href="https://www.youtube.com/watch?v=EO0ut_7N7lM" target="__blank" rel="tooltip" title="Ver Vídeo">Soy Luna <i class="fas fa-link"></i></a>
                 </li>
                 <li>
                     <a>Spider Man</a>
                 </li>
                 <li>
-                    <a>Súper Héroes</a>
+                    <a href="https://www.youtube.com/watch?v=IDUSyaHdF_Q" target="__blank" rel="tooltip" title="Ver Vídeo">Súper Héroes <i class="fas fa-link"></i></a>
                 </li>
                 <li>
                     <a>Súper Heroínas</a>
@@ -246,7 +250,7 @@
                     <a>Tatiana</a>
                 </li>
                 <li>
-                    <a>Toy Story</a>
+                    <a href="https://www.youtube.com/watch?v=JmQ-Rds71k0" target="__blank" rel="tooltip" title="Ver Vídeo">Toy Story <i class="fas fa-link"></i></a>
                 </li>
                 <li>
                     <a>Transformers</a>
@@ -255,7 +259,7 @@
                     <a>Trolls</a>
                 </li>
                 <li>
-                    <a>Unicornio</a>
+                    <a href="https://www.youtube.com/watch?v=x7xR_hvaqTg" target="__blank" rel="tooltip" title="Ver Vídeo">Unicornio <i class="fas fa-link"></i></a>
                 </li>
                 <li>
                     <a>Valiente</a>
