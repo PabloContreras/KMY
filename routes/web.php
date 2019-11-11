@@ -51,7 +51,12 @@ Route::get('/salon/videos', function() {
 Route::get('/salon/galeria', function() {
 	return view('salon.galeria');
 });
-
+Route::get('/salon/paquetes', function () {
+    return view('salon.paquetes');
+});
+Route::get('/salon/ven_a_jugar', function () {
+    return view('salon.ven_a_jugar');
+});
 /*
 **		Nosotros
 */

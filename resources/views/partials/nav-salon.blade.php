@@ -12,9 +12,9 @@
                 </li>
                 <li style="font-size: 12px;"><a href="{{ url('/salon/videos') }}" style="color: white;">Vídeos</a></li>
                 <li style="font-size: 12px;"><a href="{{ url('/salon/galeria') }}" style="color: white;">Galería</a></li>
-                <li style="font-size: 12px;"><a href="#{{-- url('/salon/paquetes') --}}" style="color: white;">Paquetes</a></li>
+                <li style="font-size: 12px;"><a href="{{ url('/salon/paquetes') }}" style="color: white;">Paquetes</a></li>
                 <li style="font-size: 12px;"><a href="#{{-- url('/salon/promociones') --}}" style="color: white;">Promociones</a></li>
-                <li style="font-size: 12px;"><a href="#{{-- url('/salon/ven_a_jugar') --}}" style="color: white;">Ven a jugar</a></li>
+                <li style="font-size: 12px;"><a href="{{ url('/salon/ven_a_jugar') }}" style="color: white;">Ven a jugar</a></li>
             </ul>
         </div>
     </div> 

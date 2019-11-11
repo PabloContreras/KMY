@@ -22,11 +22,15 @@
         @foreach( $personal as $persona )
             <div class="col-md-6">
                 <br>
-                <a href="{{ url('/shows/personal/'.$persona->id ) }}">
+                @if($persona->cantidad === 0)
+                    <a>
+                @else
+                    <a href="{{ url('/shows/personal/'.$persona->id ) }}">
+                @endif
                     <div class="card border-primary mb-3">
                         <div class="card-header"> <strong>{{ $persona->nombre }} </strong></div>
                         <div class="card-body">
-                            <img src="{{ asset('/paper_img/personal/'.$persona->nombre.'/'.$persona->nombre.'_1.jpg')}}" style="max-height: 200px;" /> 
+                            <img src="{{ asset('/paper_img/personal/'.$persona->nombre.'/'.$persona->nombre.'.jpg')}}" style="max-height: 200px;" /> 
                         </div>
                     </div>
                 </a>

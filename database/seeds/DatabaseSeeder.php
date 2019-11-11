@@ -24,10 +24,10 @@ class DatabaseSeeder extends Seeder
             'nombre' => 'Carla',
             'cantidad' => '17',
        	]);
-       	DB::table('personals')->insert([
+       	/*DB::table('personals')->insert([
             'nombre' => 'Citlali',
             'cantidad' => '4',
-       	]);
+       	]);*/
        	DB::table('personals')->insert([
             'nombre' => 'Cris',
             'cantidad' => '6',
@@ -36,10 +36,10 @@ class DatabaseSeeder extends Seeder
             'nombre' => 'Daniel',
             'cantidad' => '13',
        	]);
-       	DB::table('personals')->insert([
+       	/*DB::table('personals')->insert([
             'nombre' => 'David',
             'cantidad' => '9',
-       	]);
+       	]);*/
        	DB::table('personals')->insert([
             'nombre' => 'Frida',
             'cantidad' => '4',
@@ -48,10 +48,10 @@ class DatabaseSeeder extends Seeder
             'nombre' => 'Geraldine',
             'cantidad' => '4',
        	]);
-       	DB::table('personals')->insert([
+       	/*DB::table('personals')->insert([
             'nombre' => 'Guadalupe',
             'cantidad' => '8',
-       	]);
+       	]);*/
        	DB::table('personals')->insert([
             'nombre' => 'Ismael',
             'cantidad' => '6',
@@ -64,30 +64,65 @@ class DatabaseSeeder extends Seeder
             'nombre' => 'Joshua',
             'cantidad' => '19',
        	]);
-       	DB::table('personals')->insert([
+       	/*DB::table('personals')->insert([
             'nombre' => 'Luci',
             'cantidad' => '19',
-       	]);
+       	]);*/
        	DB::table('personals')->insert([
             'nombre' => 'Michelle',
             'cantidad' => '30',
        	]);
-       	DB::table('personals')->insert([
+       	/*DB::table('personals')->insert([
             'nombre' => 'Monica',
             'cantidad' => '5',
-       	]);
+       	]);*/
        	DB::table('personals')->insert([
             'nombre' => 'Omar',
             'cantidad' => '6',
        	]);
-       	DB::table('personals')->insert([
+       	/*DB::table('personals')->insert([
             'nombre' => 'Sharaby',
             'cantidad' => '8',
-       	]);
+       	]);*/
        	DB::table('personals')->insert([
             'nombre' => 'Ximena',
             'cantidad' => '21',
        	]);
-
+        DB::table('personals')->insert([
+            'nombre' => 'Chele',
+            'cantidad' => '0',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Liz',
+            'cantidad' => '0',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Jose',
+            'cantidad' => '0',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Jonathan',
+            'cantidad' => '0',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Iker',
+            'cantidad' => '0',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Luna',
+            'cantidad' => '0',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Kevin',
+            'cantidad' => '0',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Ivan',
+            'cantidad' => '0',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Javier',
+            'cantidad' => '0',
+        ]);
     }
 }
