@@ -112,6 +112,14 @@
                 Salón</a>
             </li>
             <li>
+                <a href="{{ url('/cursos')}}" class="btn btn-simple" 
+                {{ Request::path() == 'cursos' ? 'id=active' : '' }}
+                {{ Request::path() == 'cursos/curso_1' ? 'id=active' : '' }}
+                {{ Request::path() == 'cursos/curso_2' ? 'id=active' : '' }}
+                {{ Request::path() == 'cursos/curso_3' ? 'id=active' : '' }}
+                > Curso de verano</a>
+            </li>
+            <li>
                 <a href="{{ url('/nosotros') }}" class="btn btn-simple" {{ Request::path() == 'nosotros' ? 'id=active' : '' }}>Quiénes somos</a>
             </li>
             {{--<li>
@@ -128,6 +136,8 @@
         @include('partials.nav-shows')
     @elseif(Request::path() == 'salon' || Request::path() == 'salon/videos' || Request::path() == 'salon/galeria' || Request::path() == 'salon/paquetes' || Request::path() == 'salon/promociones' || Request::path() == 'salon/ven_a_jugar')
         @include('partials.nav-salon')
+    @elseif(Request::path() == 'cursos' || Request::path() == 'cursos/curso_3' || Request::path() == 'cursos/curso_2' || Request::path() == 'cursos/curso_1')
+        @include('partials.nav-cursos')
     @endif
     <div class="wrapper">
         <div class="landing-header" style="background-image: url('/paper_img/Kmy.png'); background-size: cover; background-position: center;">

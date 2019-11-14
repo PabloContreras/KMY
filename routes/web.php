@@ -58,6 +58,22 @@ Route::get('/salon/ven_a_jugar', function () {
     return view('salon.ven_a_jugar');
 });
 /*
+**      Cursos de verano
+*/
+Route::get('/cursos', function () {
+    return view('cursos.index');
+});
+Route::get('/cursos/curso_1', function () {
+    return view('cursos.curso_1');
+});
+Route::get('/cursos/curso_2', function () {
+    return view('cursos.curso_2');
+});
+Route::get('/cursos/curso_3', function () {
+    return view('cursos.curso_3');
+});
+
+/*
 **		Nosotros
 */
 Route::get('/nosotros', 'Controller@nosotros');
