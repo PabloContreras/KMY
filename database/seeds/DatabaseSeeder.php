@@ -18,11 +18,11 @@ class DatabaseSeeder extends Seeder
        	]);
        	DB::table('personals')->insert([
             'nombre' => 'Anayeli',
-            'cantidad' => '10',
+            'cantidad' => '6',
        	]);
        	DB::table('personals')->insert([
             'nombre' => 'Carla',
-            'cantidad' => '17',
+            'cantidad' => '4',
        	]);
        	/*DB::table('personals')->insert([
             'nombre' => 'Citlali',
@@ -30,11 +30,11 @@ class DatabaseSeeder extends Seeder
        	]);*/
        	DB::table('personals')->insert([
             'nombre' => 'Cris',
-            'cantidad' => '6',
+            'cantidad' => '2',
        	]);
        	DB::table('personals')->insert([
             'nombre' => 'Daniel',
-            'cantidad' => '13',
+            'cantidad' => '5',
        	]);
        	/*DB::table('personals')->insert([
             'nombre' => 'David',
@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
        	]);*/
        	DB::table('personals')->insert([
             'nombre' => 'Frida',
-            'cantidad' => '4',
+            'cantidad' => '6',
        	]);
        	DB::table('personals')->insert([
             'nombre' => 'Geraldine',
@@ -54,15 +54,15 @@ class DatabaseSeeder extends Seeder
        	]);*/
        	DB::table('personals')->insert([
             'nombre' => 'Ismael',
-            'cantidad' => '6',
+            'cantidad' => '7',
        	]);
        	DB::table('personals')->insert([
             'nombre' => 'Jared',
-            'cantidad' => '6',
+            'cantidad' => '4',
        	]);
        	DB::table('personals')->insert([
             'nombre' => 'Joshua',
-            'cantidad' => '19',
+            'cantidad' => '8',
        	]);
        	/*DB::table('personals')->insert([
             'nombre' => 'Luci',
@@ -70,7 +70,7 @@ class DatabaseSeeder extends Seeder
        	]);*/
        	DB::table('personals')->insert([
             'nombre' => 'Michelle',
-            'cantidad' => '30',
+            'cantidad' => '19',
        	]);
        	/*DB::table('personals')->insert([
             'nombre' => 'Monica',
@@ -78,7 +78,7 @@ class DatabaseSeeder extends Seeder
        	]);*/
        	DB::table('personals')->insert([
             'nombre' => 'Omar',
-            'cantidad' => '6',
+            'cantidad' => '4',
        	]);
        	/*DB::table('personals')->insert([
             'nombre' => 'Sharaby',
@@ -86,15 +86,15 @@ class DatabaseSeeder extends Seeder
        	]);*/
        	DB::table('personals')->insert([
             'nombre' => 'Ximena',
-            'cantidad' => '21',
+            'cantidad' => '10',
        	]);
         DB::table('personals')->insert([
-            'nombre' => 'Chele',
-            'cantidad' => '0',
+            'nombre' => 'Chelle',
+            'cantidad' => '6',
         ]);
         DB::table('personals')->insert([
             'nombre' => 'Liz',
-            'cantidad' => '0',
+            'cantidad' => '3',
         ]);
         DB::table('personals')->insert([
             'nombre' => 'Jose',
@@ -102,19 +102,19 @@ class DatabaseSeeder extends Seeder
         ]);
         DB::table('personals')->insert([
             'nombre' => 'Jonathan',
-            'cantidad' => '0',
+            'cantidad' => '10',
         ]);
         DB::table('personals')->insert([
             'nombre' => 'Iker',
-            'cantidad' => '0',
+            'cantidad' => '1',
         ]);
         DB::table('personals')->insert([
             'nombre' => 'Luna',
-            'cantidad' => '0',
+            'cantidad' => '1',
         ]);
         DB::table('personals')->insert([
             'nombre' => 'Kevin',
-            'cantidad' => '0',
+            'cantidad' => '1',
         ]);
         DB::table('personals')->insert([
             'nombre' => 'Ivan',

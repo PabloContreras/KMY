@@ -19,18 +19,17 @@
     <center><h2>Galería de {{ $persona->nombre }}</h2></center>
     <div class="row">
         <center>
-            @for( $i = 1; $i < $persona->cantidad; $i++)
-            <div class="col-md-6">
-                <br>
-                <a href="{{ url('/shows/personal/'.$persona->id ) }}">
-                    <div class="card border-primary mb-3">
-                        <div class="card-body">
-                            <img src="{{ asset('/paper_img/personal/'.$persona->nombre.'/'.$persona->nombre.'_'.$i.'.jpg')}}" style="max-height: 200px;" /> 
+            @for( $i = 1; $i <= $persona->cantidad; $i++)
+                <div class="col-md-6">
+                    <br>
+                    <a>
+                        <div class="card border-primary mb-3">
+                            <div class="card-body">
+                                <img src="{{ asset('/paper_img/personal/'.$persona->nombre.'/'.$persona->nombre.'_'.$i.'.jpg')}}" style="max-height: 250px; max-width: 90%;" />                                
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>  
-            <br>
+                    </a>
+                </div>  
             @endfor
         </center>  
     </div>
