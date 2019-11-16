@@ -23,7 +23,7 @@
         </div>
         <br>
         <div id="div_shows_en_vivo">
-            @for( $i = 1; $i < 30; $i++)
+            @for( $i = 1; $i < 42; $i++)
                 <article>
                     <center>
                         <figure>

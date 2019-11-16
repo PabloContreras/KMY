@@ -61,7 +61,7 @@ Route::get('/salon/ven_a_jugar', function () {
 **      Cursos de verano
 */
 Route::get('/cursos', function () {
-    return view('cursos.index');
+    return view('cursos.curso_1');
 });
 Route::get('/cursos/curso_1', function () {
     return view('cursos.curso_1');

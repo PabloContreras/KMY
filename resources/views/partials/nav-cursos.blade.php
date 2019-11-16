@@ -9,6 +9,7 @@
         </div>
     </div> 
     <div class="text-center"> <b>Estás
+        {{ Request::path() == 'cursos' ? 'viendo información sobre el curso 1' : '' }} 
         {{ Request::path() == 'cursos/curso_1' ? 'viendo información sobre el curso 1' : '' }} 
         {{ Request::path() == 'cursos/curso_2' ? 'viendo información sobre el curso 2' : '' }} 
         {{ Request::path() == 'cursos/curso_3' ? 'viendo información sobre el curso 3' : '' }}
