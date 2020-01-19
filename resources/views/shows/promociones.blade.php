@@ -21,7 +21,7 @@
             <h2>Cualquier show</h2>
         </div>
         <div class="col-md-12 text-center">
-            <img src="{{ asset('/img/shows/promociones/octubre.jpg') }}" style="width: 100%;">
+            <img src="{{ asset('/img/shows/promociones/enero.jpg') }}" style="width: 100%;">
         </div>        
     </div>
 @endsection
