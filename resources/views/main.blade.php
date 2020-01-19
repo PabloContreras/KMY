@@ -182,7 +182,7 @@
                     </div>
                 @endif
                 <div class="col-md-4">
-                    &copy; 2019, hecho con <i class="fa fa-heart heart"></i> & <i class="fa fa-coffee" style="color: white;"></i> 
+                    &copy;<script>document.write(new Date().getFullYear());</script>, hecho con <i class="fa fa-heart heart"></i> &amp; <i class="fa fa-coffee" style="color: white;"></i> 
                 </div>
             </div>
         </div>
