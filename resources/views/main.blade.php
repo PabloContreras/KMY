@@ -181,8 +181,8 @@
                         </p>
                     </div>
                 @endif
-                <div class="col-md-4">
-                    &copy;<script>document.write(new Date().getFullYear());</script>, <a href="https://kainotomia.xyz" target="__blank">Kainotomia Software Lab</a>. lo hacemos con<i class="fa fa-heart heart"></i>
+                <div class="col-md-6 ml-auto">
+                    &copy;<script>document.write(new Date().getFullYear());</script>, <a href="https://kainotomia.xyz" target="__blank">Kainotomia Software Lab</a>. Lo hacemos con <i class="fa fa-heart heart"></i>
                 </div>
             </div>
         </div>
