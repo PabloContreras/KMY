@@ -2,6 +2,26 @@
 <style type="text/css">
     button{
         margin-bottom: 10px !important;
+    }   
+    .video-responsive {
+        position: relative;
+        padding-bottom: 56.25%; /* 16/9 ratio */
+        padding-top: 30px; /* IE6 workaround*/
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-responsive iframe,
+    .video-responsive object,
+    .video-responsive embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #hidden {
+        display: none !important;
     }
 </style>
 @section('navtab')
@@ -21,9 +41,14 @@
     </div>
 @endsection
 @section('content')
-    <center><h1>Shows</h1></center><br><br>
-
-    <div class="col-md-4">
+    <div class="row text-center mb-2">
+        <div class="col-md-12" style="margin-bottom: 50px;">
+            <h1>Shows</h1>
+            <small>Busca tu show por orden alfabético</small>
+        </div>    
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4">
             <ol>
                 <li>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter3">
@@ -425,25 +450,45 @@
                 </li>
             </ol>  
         </div>
+    </div>
 
 
 
-    @for ($i = 1; $i < 79; $i++)
-        <div class="modal fade" id="exampleModalCenter{{$i}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+    @foreach( $shows as $show )
+        <div class="modal fade" id="exampleModalCenter{{ $show->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog  modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Nuestros shows</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        <div class="row">
+                            <div class="col-md-10 text-center">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Nuestros shows</h5>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>                        
                     </div>
                     <div class="modal-body">
-                        <img src="{{ asset('/img/shows/index_shows/'.$i.'.jpg') }}" style="width: 100%;">
+                        <div id="myCarousel{{ $show->id }}" class="carousel slide" data-ride="carousel"  data-interval="false" >
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel{{ $show->id }}" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel{{ $show->id }}" data-slide-to="1" {{ $show->video === 'NULL' ? 'id=hidden' : '' }}></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="{{ asset('/img/shows/index_shows/'.$show->id.'.jpg') }}" style="background-color: white;">
+                                </div>
+                                <div class="item" {{ $show->video === 'NULL' ? 'id=hidden' : '' }}>
+                                    <iframe width="100%" height="75%" src="{{ 'https://www.youtube.com/embed/'.$show->video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    @endfor
-    <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'de6c7a72-5e87-48c0-a163-d049367df9d7', f: true }); done = true; } }; })();</script>
+    @endforeach
+    
 @endsection

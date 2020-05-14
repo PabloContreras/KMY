@@ -219,9 +219,6 @@
         });
      
     });
-        $('#myCarousel').carousel({
-            interval: false
-        });
 </script>
-
+<script> $(document).ready(function() { $('.carousel').carousel('pause'); }); </script>
 </html>

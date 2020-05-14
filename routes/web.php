@@ -30,9 +30,10 @@ Route::get('/shows/videos', function () {
 Route::get('/shows/galeria', function () {
     return view('shows.galeria');
 });
-Route::get('/shows/todos', function () {
+/*Route::get('/shows/todos', function () {
     return view('shows.shows');
-});
+});*/
+Route::get('/shows/todos', 'Controller@shows');
 Route::get('/shows/personal', 'PersonalController@index');
 Route::get('/shows/personal/{id}', 'PersonalController@show');
 
