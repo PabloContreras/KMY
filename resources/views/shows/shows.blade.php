@@ -23,6 +23,14 @@
     #hidden {
         display: none !important;
     }
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      border-radius: 8px;
+      box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+      margin-left: 0 !important;
+      max-width: 100% !important; 
+      min-width: 100% !important;
+    }
 </style>
 @section('navtab')
     <div class="alert landing-alert" style="background-color: #00bdf2;">

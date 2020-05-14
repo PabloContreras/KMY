@@ -12,6 +12,8 @@
     
     <link href="{{ asset('bootstrap3/css/bootstrap.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/ct-paper.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('css/demo.css') }}" rel="stylesheet" /> 
+    <link href="{{ asset('css/examples.css') }}" rel="stylesheet" /> 
     <link href="{{ asset('css/fontawesome/css/all.min.css') }}" rel="stylesheet" type="text/css">
 
         
