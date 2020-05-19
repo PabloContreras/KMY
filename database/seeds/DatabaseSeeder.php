@@ -17,39 +17,39 @@ class DatabaseSeeder extends Seeder
         */
         DB::table('personals')->insert([
             'nombre' => 'Anahi',
-            'cantidad' => '7',
+            'cantidad' => '11',
        	]);
        	DB::table('personals')->insert([
             'nombre' => 'Anayeli',
-            'cantidad' => '6',
+            'cantidad' => '11',
        	]);
        	DB::table('personals')->insert([
             'nombre' => 'Carla',
-            'cantidad' => '4',
+            'cantidad' => '9',
        	]);
        	DB::table('personals')->insert([
             'nombre' => 'Cris',
-            'cantidad' => '2',
+            'cantidad' => '3',
        	]);
        	DB::table('personals')->insert([
             'nombre' => 'Geraldine',
-            'cantidad' => '4',
-       	]);
-       	DB::table('personals')->insert([
-            'nombre' => 'Ismael',
             'cantidad' => '7',
        	]);
        	DB::table('personals')->insert([
+            'nombre' => 'Ismael',
+            'cantidad' => '9',
+       	]);
+       	DB::table('personals')->insert([
             'nombre' => 'Jared',
-            'cantidad' => '4',
+            'cantidad' => '9',
        	]);
        	DB::table('personals')->insert([
             'nombre' => 'Omar',
-            'cantidad' => '4',
+            'cantidad' => '5',
        	]);
         DB::table('personals')->insert([
             'nombre' => 'Chelle',
-            'cantidad' => '6',
+            'cantidad' => '11',
         ]);
         DB::table('personals')->insert([
             'nombre' => 'Liz',
@@ -57,22 +57,62 @@ class DatabaseSeeder extends Seeder
         ]);
         DB::table('personals')->insert([
             'nombre' => 'Jose',
-            'cantidad' => '0',
-        ]);
-        DB::table('personals')->insert([
-            'nombre' => 'Jonathan',
-            'cantidad' => '10',
+            'cantidad' => '1',
         ]);
         DB::table('personals')->insert([
             'nombre' => 'Iker',
-            'cantidad' => '1',
+            'cantidad' => '6',
         ]);
         DB::table('personals')->insert([
             'nombre' => 'Luna',
-            'cantidad' => '1',
+            'cantidad' => '4',
         ]);
         DB::table('personals')->insert([
             'nombre' => 'Kevin',
+            'cantidad' => '1',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Leslie',
+            'cantidad' => '1',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Angelica',
+            'cantidad' => '1',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Jeny',
+            'cantidad' => '1',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Lalo',
+            'cantidad' => '1',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Avril',
+            'cantidad' => '1',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Zaira',
+            'cantidad' => '1',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Pamela',
+            'cantidad' => '1',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Violeta',
+            'cantidad' => '2',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Osvaldo',
+            'cantidad' => '2',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Alex',
+            'cantidad' => '1',
+        ]);
+        DB::table('personals')->insert([
+            'nombre' => 'Norma',
             'cantidad' => '1',
         ]);
         /*
@@ -403,6 +443,17 @@ class DatabaseSeeder extends Seeder
             'nombre' => 'Valiente',
             'video' => 'NULL',
         ]);
+        DB::table('shows')->insert([
+            'id' => '79',
+            'nombre' => 'Baby Shark',
+            'video' => 'NULL',
+        ]);
+        DB::table('shows')->insert([
+            'id' => '80',
+            'nombre' => 'Polinesios',
+            'video' => 'NULL',
+        ]);
+
 
     }
 }

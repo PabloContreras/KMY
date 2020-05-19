@@ -31,6 +31,11 @@
       max-width: 100% !important; 
       min-width: 100% !important;
     }
+    .vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 </style>
 @section('navtab')
     <div class="alert landing-alert" style="background-color: #00bdf2;">
@@ -81,6 +86,11 @@
                 <li>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter10">
                         Avengers
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter79">
+                        Baby Shark
                     </button>
                 </li>
                 <li>
@@ -190,7 +200,7 @@
             </ol>            
         </div>
         <div class="col-md-4">
-            <ol start="27">
+            <ol start="28">
                 <li>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter29">
                         Hi5
@@ -325,7 +335,7 @@
             </ol>
         </div>
         <div class="col-md-4">
-            <ol start="53">
+            <ol start="54">
                 <li>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter55">
                         Pinta caritas
@@ -349,6 +359,11 @@
                 <li>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter59">
                         Pokémon
+                    </button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter80">
+                        Polinesios
                     </button>
                 </li>
                 <li>
@@ -381,11 +396,11 @@
                         Reyes Magos
                     </button>
                 </li>
-                {{--<li>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter66">
+                <li>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter8">
                         Rosita Fresita
                     </button>
-                </li>--}}
+                </li>
                 <li>
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter66">
                         Santa Clous
@@ -465,7 +480,7 @@
     @foreach( $shows as $show )
         <div class="modal fade" id="exampleModalCenter{{ $show->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog  modal-lg" role="document">
-                <div class="modal-content">
+                <div class="modal-content" >
                     <div class="modal-header">
                         <div class="row">
                             <div class="col-md-10 text-center">
@@ -477,7 +492,7 @@
                                 </button>
                             </div>
                         </div>                        
-                    </div>
+                    </div>                    
                     <div class="modal-body">
                         <div id="myCarousel{{ $show->id }}" class="carousel slide" data-ride="carousel"  data-interval="false" >
                             <ol class="carousel-indicators">
@@ -492,6 +507,14 @@
                                     <iframe width="100%" height="75%" src="{{ 'https://www.youtube.com/embed/'.$show->video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                             </div>
+                            <a class="carousel-control-prev vcenter" href="#myCarousel{{ $show->id }}" role="button" data-slide="prev">
+                                <span class="fa fa-arrow-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next pull-right" href="#myCarousel{{ $show->id }}" role="button" data-slide="next">
+                                <span class="fa fa-arrow-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
                 </div>

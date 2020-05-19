@@ -12,7 +12,7 @@
     </center>
     <section class="galeria">
         <div id="div_shows_en_vivo">
-            @for( $i = 1; $i < 30; $i++)
+            @for( $i = 1; $i < 51; $i++)
                 <article>
                     <center>
                         <figure>
