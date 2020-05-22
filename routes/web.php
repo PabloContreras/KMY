@@ -58,6 +58,9 @@ Route::get('/salon/paquetes', function () {
 Route::get('/salon/ven_a_jugar', function () {
     return view('salon.ven_a_jugar');
 });
+Route::get('/salon/promociones', function () {
+    return view('salon.promociones');
+});
 /*
 **      Cursos de verano
 */
