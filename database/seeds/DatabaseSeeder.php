@@ -52,10 +52,6 @@ class DatabaseSeeder extends Seeder
             'cantidad' => '11',
         ]);
         DB::table('personals')->insert([
-            'nombre' => 'Liz',
-            'cantidad' => '3',
-        ]);
-        DB::table('personals')->insert([
             'nombre' => 'Jose',
             'cantidad' => '1',
         ]);
@@ -66,10 +62,6 @@ class DatabaseSeeder extends Seeder
         DB::table('personals')->insert([
             'nombre' => 'Luna',
             'cantidad' => '4',
-        ]);
-        DB::table('personals')->insert([
-            'nombre' => 'Kevin',
-            'cantidad' => '1',
         ]);
         DB::table('personals')->insert([
             'nombre' => 'Leslie',
