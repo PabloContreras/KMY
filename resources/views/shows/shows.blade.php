@@ -499,27 +499,36 @@
                                 <li data-target="#myCarousel{{ $show->id }}" data-slide-to="0" class="active"></li>
                                 <li data-target="#myCarousel{{ $show->id }}" data-slide-to="1" {{ $show->video === 'NULL' ? 'id=hidden' : '' }}></li>
                             </ol>
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img src="{{ asset('/img/shows/index_shows/'.$show->id.'.jpg') }}" style="background-color: white;">
+                            <div class="row" style="display: flex; align-items: center; margin: 0px 0px;">
+                                <div class="col-lg-1">
+                                    <a class="carousel-control-prev vcenter" href="#myCarousel{{ $show->id }}" role="button" data-slide="prev">
+                                        <i class="fa fa-arrow-left fa-lg" aria-hidden="true" style="color: black;"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
                                 </div>
-                                <div class="item" {{ $show->video === 'NULL' ? 'id=hidden' : '' }}>
-                                    <iframe width="100%" height="75%" src="{{ 'https://www.youtube.com/embed/'.$show->video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="col-lg-10">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="{{ asset('/img/shows/index_shows/'.$show->id.'.jpg') }}" style="background-color: white;">
+                                        </div>
+                                        <div class="item" {{ $show->video === 'NULL' ? 'id=hidden' : '' }}>
+                                            <iframe width="100%" height="75%" src="{{ 'https://www.youtube.com/embed/'.$show->video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1">
+                                    <a class="carousel-control-next pull-right" href="#myCarousel{{ $show->id }}" role="button" data-slide="next">
+                                        <i class="fa fa-arrow-right fa-lg" aria-hidden="true" style="color: black;"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                    
                                 </div>
                             </div>
-                            <a class="carousel-control-prev vcenter" href="#myCarousel{{ $show->id }}" role="button" data-slide="prev">
-                                <span class="fa fa-arrow-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next pull-right" href="#myCarousel{{ $show->id }}" role="button" data-slide="next">
-                                <span class="fa fa-arrow-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     @endforeach
-    
 @endsection

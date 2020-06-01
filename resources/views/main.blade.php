@@ -83,7 +83,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ url('/')}}"><img src="{{ asset('paper_img/kmylogo.png') }}" style="height: 40px" alt=""></a>
+          <a class="navbar-brand" href="{{ url('/')}}"><img src="{{ asset('/paper_img/Kmy.png') }}" style="height: 40px" alt=""></a>
         </div>
     
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -140,7 +140,8 @@
         @include('partials.nav-cursos')
     @endif
     <div class="wrapper">
-        <div class="landing-header" style="background-image: url('/paper_img/Kmy.png'); background-size: cover; background-position: center;">
+        <div>
+            <img src="{{ asset('/paper_img/Kmy.png') }}" style="width: 100%;" alt="KMY logo">
         </div> 
         <div class="container">
             @yield('content')         
@@ -220,5 +221,5 @@
      
     });
 </script>
-<script> $(document).ready(function() { $('.carousel').carousel('pause'); }); </script>
+{{-- <script> $(document).ready(function() { $('.carousel').carousel('pause'); }); </script>--}}
 </html>
