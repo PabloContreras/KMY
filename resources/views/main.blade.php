@@ -221,5 +221,5 @@
      
     });
 </script>
-{{-- <script> $(document).ready(function() { $('.carousel').carousel('pause'); }); </script>--}}
+<script> $(document).ready(function() { $('.carousel').carousel('pause'); }); </script>
 </html>
