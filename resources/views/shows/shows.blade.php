@@ -37,6 +37,57 @@
     float: none;
 }
 </style>
+<style>
+    .contenedor{
+      display: block; 
+      margin: 20px auto; 
+      width: 100%; 
+      max-width: 600px;  
+    }
+    .reproductor { 
+      display: block; 
+      width: 100%; 
+      height: 100%; 
+      padding-bottom: 56.25%; 
+      overflow: hidden; 
+      position: relative; 
+      cursor: hand; 
+      cursor: pointer; 
+    }
+    img.imagen-previa { 
+       display: block; 
+       left: 0; 
+       bottom: 0;
+       margin: auto; 
+       max-width: 100%; 
+       width: 100%; 
+       position: absolute; 
+       right: 0; 
+       top: 0; 
+       height: auto 
+    }
+    div.youtube-play { 
+       height: 64px; 
+       width: 64px; 
+       left: 50%; 
+       top: 50%; 
+       margin-left: -36px; 
+       margin-top: -36px;
+       opacity:0.7;
+       position: absolute; 
+       background:   url("https://cdn2.iconfinder.com/data/icons/social-icons-color/512/youtube-64.png") no-repeat; 
+    }
+    div.youtube-play:hover{
+       opacity:1; 
+    }
+    #youtube-iframe { 
+       width: 100%; 
+       height: 100%; 
+       position: absolute; 
+       top: 0; 
+       left: 0; 
+    }
+</style>
 @section('navtab')
     <div class="alert landing-alert" style="background-color: #00bdf2;">
         <div class="nav-tabs-navigation">
@@ -500,23 +551,27 @@
                                 <li data-target="#myCarousel{{ $show->id }}" data-slide-to="1" {{ $show->video === 'NULL' ? 'id=hidden' : '' }}></li>
                             </ol>
                             <div class="row" style="display: flex; align-items: center; margin: 0px 0px;">
-                                <div class="col-lg-1">
+                                <div class="col-lg-1" {{ $show->video === 'NULL' ? 'id=hidden' : '' }}>
                                     <a class="carousel-control-prev vcenter" href="#myCarousel{{ $show->id }}" role="button" data-slide="prev">
                                         <i class="fa fa-arrow-left fa-lg" aria-hidden="true" style="color: black;"></i>
                                         <span class="sr-only">Previous</span>
                                     </a>
                                 </div>
-                                <div class="col-lg-10">
+                                <div class="{{ $show->video === 'NULL' ? 'col-lg-12' : 'col-lg-10' }}">
                                     <div class="carousel-inner">
                                         <div class="item active">
                                             <img src="{{ asset('/img/shows/index_shows/'.$show->id.'.jpg') }}" style="background-color: white;">
                                         </div>
                                         <div class="item" {{ $show->video === 'NULL' ? 'id=hidden' : '' }}>
-                                            <iframe width="100%" height="75%" src="{{ 'https://www.youtube.com/embed/'.$show->video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            {{-- <iframe width="100%" height="75%" src="{{ 'https://www.youtube.com/embed/'.$show->video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
+                                            <div class="contenedor">
+                                              <div class="reproductor" data-id="{{ $show->video }}"></div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-1">
+                                <div class="col-lg-1" {{ $show->video === 'NULL' ? 'id=hidden' : '' }}>
                                     <a class="carousel-control-next pull-right" href="#myCarousel{{ $show->id }}" role="button" data-slide="next">
                                         <i class="fa fa-arrow-right fa-lg" aria-hidden="true" style="color: black;"></i>
                                         <span class="sr-only">Next</span>
@@ -531,4 +586,25 @@
             </div>
         </div>
     @endforeach
+    <script type="text/javascript">
+        (function() {
+            var v = document.getElementsByClassName("reproductor");
+            for (var n = 0; n < v.length; n++) {
+                var p = document.createElement("div");
+                p.innerHTML = labnolThumb(v[n].dataset.id);
+                p.onclick = labnolIframe;
+                v[n].appendChild(p);
+            }
+        })();
+        function labnolThumb(id) {
+            return '<img class="imagen-previa" src="//i.ytimg.com/vi/' + id + '/hqdefault.jpg"><div class="youtube-play"></div>';
+        }
+        function labnolIframe() {
+            var iframe = document.createElement("iframe");
+            iframe.setAttribute("src", "//www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0");
+            iframe.setAttribute("frameborder", "0");
+            iframe.setAttribute("id", "youtube-iframe");
+            this.parentNode.replaceChild(iframe, this);
+        }
+    </script>
 @endsection
